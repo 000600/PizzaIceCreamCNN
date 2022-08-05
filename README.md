@@ -14,18 +14,24 @@ Note that when running the **pizza_icecream_cnn.py** file, you will need to inpu
 > The dataset is stored in a folder called *food-data*, under which are the respective *train*, *test*, and *valid* directories that can be downloaded from the source (the link to the download site is below)
 > - Thus, your file stucture is something like:
 
-> folder1
->   folder2
->     food-data
->       train
->         pizza
->         icecream
->       test
->         pizza
->         icecream
->       valid
->         pizza
->         icecream
+>     ↓ folder1
+>       ↓ folder2
+>         ↓ food-data
+>           ↓ train
+>             ↓ pizza
+>                 < Images >
+>             ↓ icecream
+>                 < Images >
+>           ↓ test
+>             ↓ pizza
+>                 < Images >
+>             ↓ icecream
+>                 < Images >
+>           ↓ valid
+>             ↓ pizza
+>                 < Images >
+>             ↓ icecream
+>                 < Images >
 
 > The paths you input should be something along the lines of: *~/folder1/folder2/food-data/train/*, *~/folder1/folder2/food-data/test/*, and *~/folder1/folder2/food-data/valid/*, and your **path_list** should be set to ['pizza', 'icecream'], so that when the **create_dataset()** function is running it concatenates the paths with the elements of **path_list** to produce fully coherent paths, such as *~/folder1/folder2/food-data/train/pizza*, *~/folder1/folder2/food-data/train/icecream*, *~/folder1/folder2/food-data/test/pizza*, etc.
 
