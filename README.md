@@ -38,14 +38,9 @@ Note that when running the **pizza_icecream_cnn.py** file, you will need to inpu
 Feel free to further tune the hyperparameters or build upon the model!
 
 ## The Dataset
-The dataset can be found at this link: https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection. Credit for the dataset collection goes to **def me(x)**, **Loai abdalslam**, **Anshu Sinha**, and others on *Kaggle*. Note that the images from the original dataset are resized to 128 x 128 images so that they are more maneagable for the model. They are considered RGB by the model (the images have three color channels) because the VGG16 model only accepts images with three color channels. The dataset is not included in the repository because it is too large to stabley upload to Github, so just use the link about to find and download the dataset.
+The dataset can be found at this link: https://www.kaggle.com/datasets/hemendrasr/pizza-vs-ice-cream. Credit for the dataset collection goes to **whxna-0615**, **Hemendra Singh Rajawat**, **stpete_ishii**, and others on *Kaggle*. Note that the images from the original dataset are resized to 128 x 128 images so that they are more maneagable for the model. They are considered RGB by the model (the images have three color channels) because the VGG16 model only accepts images with three color channels. The dataset is not included in the repository because it is too large to stabley upload to Github, so just use the link above to find and download the dataset.
 
 ## Libraries
-This neural network was created with the help of the Tensorflow and Scikit-Learn libraries.
+This neural network was created with the help of the Tensorflow library.
 - Tensorflow's Website: https://www.tensorflow.org/
 - Tensorflow Installation Instructions: https://www.tensorflow.org/install
-- Scikit-Learn's Website: https://scikit-learn.org/stable/
-- Scikit-Learn's Installation Instructions: https://scikit-learn.org/stable/install.html
-
-## Disclaimer
-Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual medical use or application in any way. 
