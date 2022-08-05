@@ -10,7 +10,24 @@ This convolutional neural network predicts whether an image is of pizza or ice c
 - 1 Hidden layer (with 256 neurons and a ReLU activation function
 - 1 Output layer (with 1 output neuron and a sigmoid activation function)
 
-Note that when running the **pizza_icecream_cnn.py** file, you will need to input the paths of the training, testing, and validation sets as strings — the location for where to put the paths are signified in the file with the words "< PATH TO IMAGES THAT DEPICT A TUMOR >" and "< PATH TO IMAGES THAT DO NOT DEPICT A TUMOR >."
+Note that when running the **pizza_icecream_cnn.py** file, you will need to input the paths of the training, testing, and validation sets as strings — the location for where to put the paths are signified in the file with the words "< PATH TO TRAINING DATA >," "< PATH TO TESTING DATA >," and "< PATH TO VALIDATION DATA >." Note that when you input these paths, they should be such that — when they are concatenated with the individual elements listed in the **path_list** variable — they are complete paths. For example:
+> The dataset is stored in a folder called *food-data*, under which are the respective *train*, *test*, and *valid* directories that can be downloaded from the source (the link to the download site is below)
+> - Thus, your file stucture is something like:
+
+> folder1
+>   folder2
+>     food-data
+>       train
+>         pizza
+>         icecream
+>       test
+>         pizza
+>         icecream
+>       valid
+>         pizza
+>         icecream
+
+> The paths you input should be something along the lines of: *~/folder1/folder2/food-data/train/*, *~/folder1/folder2/food-data/test/*, and *~/folder1/folder2/food-data/valid/*, and your **path_list** should be set to ['pizza', 'icecream'], so that when the **create_dataset()** function is running it concatenates the paths with the elements of **path_list** to produce fully coherent paths, such as *~/folder1/folder2/food-data/train/pizza*, *~/folder1/folder2/food-data/train/icecream*, *~/folder1/folder2/food-data/test/pizza*, etc.
 
 Feel free to further tune the hyperparameters or build upon the model!
 
