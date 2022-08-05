@@ -4,21 +4,20 @@ from PIL import Image
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.layers import Flatten, Dense, Dropout
 from tensorflow.keras.layers.experimental.preprocessing import RandomFlip
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.losses import CategoricalCrossentropy
 from tensorflow.keras.metrics import CategoricalAccuracy, AUC
-from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.applications.vgg16 import VGG16
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Define paths
-train_path = '/content/drive/MyDrive/ML/Pizza Dataset/train/'
-test_path = '/content/drive/MyDrive/ML/Pizza Dataset/test/'
-val_path = '/content/drive/MyDrive/ML/Pizza Dataset/valid/'
+train_path = ' < PATH TO TRAINING DATA > '
+test_path = ' < PATH TO TESTING DATA > '
+val_path = ' < PATH TO VALIDATION DATA > '
 
 # Define path specification list
 path_list = ['pizza', 'icecream']
@@ -28,7 +27,7 @@ classes = ['Pizza', 'Ice Cream']
 
 # Initialize lists
 x_train = []
-y_train = [
+y_train = []
 
 x_test = []
 y_test = []
