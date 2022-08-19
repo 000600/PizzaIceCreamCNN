@@ -33,7 +33,7 @@ Note that when running the **pizza_icecream_cnn.py** file, you will need to inpu
 >             ↓ icecream
 >                 < Images >
 
-> The paths you input should be something along the lines of: *~/folder1/folder2/food-data/train/*, *~/folder1/folder2/food-data/test/*, and *~/folder1/folder2/food-data/valid/*, and your **path_list** should be set to ['pizza', 'icecream'], so that when the **create_dataset()** function is running it concatenates the paths with the elements of **path_list** to produce fully coherent paths, such as *~/folder1/folder2/food-data/train/pizza*, *~/folder1/folder2/food-data/train/icecream*, *~/folder1/folder2/food-data/test/pizza*, etc.
+> The paths you input should be something along the lines of: *~/folder1/folder2/food-data/train/*, *~/folder1/folder2/food-data/test/*, and *~/folder1/folder2/food-data/valid/*, and your **path_list** should be set to ['pizza', 'icecream'], so that when the **create_dataset()** function is running it concatenates the paths with each element in **path_list** to produce fully coherent paths, such as *~/folder1/folder2/food-data/train/pizza*, *~/folder1/folder2/food-data/train/icecream*, *~/folder1/folder2/food-data/test/pizza*, etc.
 
 Feel free to further tune the hyperparameters or build upon the model!
 
