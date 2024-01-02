@@ -10,7 +10,7 @@ This convolutional neural network predicts whether an image is of pizza or ice c
 - 1 Hidden layer (with 256 neurons and a ReLU activation function
 - 1 Output layer (with 1 output neuron and a sigmoid activation function)
 
-Note that when running the **pizza_icecream_cnn.py** file, you will need to input the paths of the training, testing, and validation sets as strings — the location for where to put the paths are signified in the file with the words "< PATH TO TRAINING DATA >," "< PATH TO TESTING DATA >," and "< PATH TO VALIDATION DATA >." Note that when you input these paths, they should be such that — when they are concatenated with the individual elements listed in the **path_list** variable — they are complete paths. For example:
+Note that when running the **pizza_icecream_cnn.py** file, you will need to input the paths of the training, testing, and validation sets as strings — the location for where to put the paths are signified in the file with the words "< PATH TO TRAINING DATA >," "< PATH TO TESTING DATA >," and "< PATH TO VALIDATION DATA >." When you input these paths, they should be such that — when they are concatenated with the individual elements listed in the **path_list** variable — they are complete paths. For example:
 > The dataset is stored in a folder called *food-data*, under which are the respective *train*, *test*, and *valid* directories that can be downloaded from the source (the link to the download site is below)
 > - Thus, your file structure is something like:
 
